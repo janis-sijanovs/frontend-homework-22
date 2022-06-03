@@ -1,5 +1,5 @@
 <template>
-  <button @click="$emit('toggle-select')">
+  <button :class="{ active: service.isChosen }" @click="$emit('toggle-select')">
     {{ service.name }}
     {{ service.price }} $
   </button>
@@ -31,5 +31,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.active {
+  background-color: #42b983;
 }
 </style>

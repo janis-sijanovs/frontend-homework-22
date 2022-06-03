@@ -3,7 +3,9 @@
     <button v-if="!task.completed" @click="$emit('toggle-completion')">
       -
     </button>
-    <button v-if="task.completed" @click="$emit('toggle-completion')">V</button>
+    <button v-if="task.completed" @click="$emit('toggle-completion')">
+      Done
+    </button>
     <p>{{ task.value }}</p>
     <button @click="$emit('delete')">X</button>
   </div>

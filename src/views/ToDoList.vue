@@ -65,13 +65,16 @@ export default defineComponent({
       }
       this.inputValue = "";
     },
+
     deleteTask(targetTask: Task) {
       this.tasks = this.tasks.filter((task) => task !== targetTask);
     },
+
     toggleCompletion(targetTask: Task) {
       this.tasks[this.tasks.indexOf(targetTask)].completed =
         !this.tasks[this.tasks.indexOf(targetTask)].completed;
     },
+
     useFilter(filter: string) {
       switch (filter) {
         case "all":
