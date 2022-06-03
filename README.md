@@ -3,7 +3,7 @@
 I have finished my twenty-second homework.
 
 This is even lazier than the last one.
-I completley ignored styling.
+I completely ignored styling.
 Didn't care about DRY.
 Left a bunch of prettier errors in.
 
